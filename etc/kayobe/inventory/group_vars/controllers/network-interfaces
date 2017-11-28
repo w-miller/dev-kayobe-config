@@ -4,8 +4,9 @@
 
 # Controller interface on all-in-one network.
 aio_interface: breth1
-aio_bridge_ports:
-  - eth1
+#aio_bridge_ports:
+#  - eth1
+aio_bridge_ports: []
 
 ###############################################################################
 # Dummy variable to allow Ansible to accept this file.

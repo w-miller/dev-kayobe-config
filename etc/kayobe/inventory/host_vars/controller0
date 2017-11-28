@@ -1,0 +1,4 @@
+---
+ansible_connection: ssh
+ansible_host: localhost
+ansible_port: 2223

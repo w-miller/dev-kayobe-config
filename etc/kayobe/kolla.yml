@@ -152,10 +152,12 @@
 #kolla_enable_gnocchi:
 #kolla_enable_grafana:
 #kolla_enable_haproxy:
+kolla_enable_haproxy: False
 #kolla_enable_heat:
 #kolla_enable_horizon:
 #kolla_enable_influxdb:
 #kolla_enable_ironic:
+kolla_enable_ironic: False
 #kolla_enable_iscsid:
 #kolla_enable_karbor:
 #kolla_enable_kuryr:

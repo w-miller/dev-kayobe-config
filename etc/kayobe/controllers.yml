@@ -6,7 +6,8 @@
 # to setup the Kayobe user account.
 #controller_bootstrap_user:
 # No need to provide a different user for bootstrapping.
-controller_bootstrap_user: vagrant
+#controller_bootstrap_user: vagrant
+controller_bootstrap_user: root
 
 ###############################################################################
 # Network interface attachments.

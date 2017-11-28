@@ -2,6 +2,11 @@
 ###############################################################################
 # DNS.
 
+# Whether to configure the DNS resolver.
+#resolv_configure:
+# NOTE: resolv.conf can't be configured in a container using the resolv role.
+resolv_configure: False
+
 # List of DNS nameservers.
 #resolv_nameservers:
 
