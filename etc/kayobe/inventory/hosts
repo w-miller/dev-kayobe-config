@@ -1,6 +1,9 @@
 [config-mgmt]
 localhost ansible_connection=local
 
+[seed-hypervisor]
+localhost
+
 [seed]
 seed
 
