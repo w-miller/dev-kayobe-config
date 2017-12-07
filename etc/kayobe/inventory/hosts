@@ -8,7 +8,7 @@ localhost
 seed
 
 [controllers]
-controller0
+#controller0
 
-[compute]
-controller0
+[compute:children]
+controllers
