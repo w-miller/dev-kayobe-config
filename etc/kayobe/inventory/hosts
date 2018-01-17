@@ -1,5 +1,9 @@
 [config-mgmt]
 localhost ansible_connection=local
 
+[container-image-builders:children]
+# Add the controllers to the group for building container images.
+controllers
+
 [controllers]
 controller0
