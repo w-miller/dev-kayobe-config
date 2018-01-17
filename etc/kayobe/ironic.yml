@@ -2,6 +2,40 @@
 ###############################################################################
 # Ironic configuration.
 
+kolla_ironic_enabled_hardware_types:
+  - fake-hardware
+kolla_ironic_enabled_boot_interfaces:
+  - fake
+kolla_ironic_default_boot_interface: fake
+kolla_ironic_enabled_console_interfaces:
+  - ipmitool-socat,no-console
+kolla_ironic_default_console_interface: ipmitool-socat
+kolla_ironic_enabled_deploy_interfaces:
+  - fake
+kolla_ironic_default_deploy_interface: fake
+kolla_ironic_enabled_inspect_interfaces:
+  - inspector
+  - no-inspect
+kolla_ironic_default_inspect_interface: inspector
+kolla_ironic_enabled_management_interfaces:
+  - fake
+kolla_ironic_default_management_interface: fake
+kolla_ironic_enabled_network_interfaces:
+  - noop
+  - flat
+  - neutron
+kolla_ironic_default_network_interface: neutron
+kolla_ironic_enabled_power_interfaces:
+  - fake
+kolla_ironic_default_power_interface: fake
+kolla_ironic_enabled_raid_interfaces:
+  - agent
+  - no-raid
+kolla_ironic_default_raid_interface: no-raid
+kolla_ironic_enabled_vendor_interfaces:
+  - no-vendor
+kolla_ironic_default_vendor_interface: no-vendor
+
 # List of enabled Ironic drivers.
 #kolla_ironic_drivers:
 
