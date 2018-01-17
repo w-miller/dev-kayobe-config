@@ -4,81 +4,128 @@
 
 # List of enabled Ironic drivers.
 #kolla_ironic_drivers:
+kolla_ironic_drivers:
+  - agent_ipmitool
+  - fake
+  - pxe_ipmitool
 
 # Specify the list of hardware types to load during service initialization.
 #kolla_ironic_enabled_hardware_types:
+kolla_ironic_enabled_hardware_types:
+  - fake-hardware
+  - ipmi
 
 # Specify the list of boot interfaces to load during service initialization.
 #kolla_ironic_enabled_boot_interfaces:
+kolla_ironic_enabled_boot_interfaces:
+  - fake
+  - pxe
 
 # Default boot interface to be used for nodes that do not have boot_interface
 # field set.
 #kolla_ironic_default_boot_interface:
+kolla_ironic_default_boot_interface: fake
 
 # Specify the list of console interfaces to load during service initialization.
 #kolla_ironic_enabled_console_interfaces:
+kolla_ironic_enabled_console_interfaces:
+  - ipmitool-socat
+  - no-console
 
 # Default console interface to be used for nodes that do not have
 # console_interface field set.
 #kolla_ironic_default_console_interface:
+kolla_ironic_default_console_interface: ipmitool-socat
 
 # Specify the list of deploy interfaces to load during service initialization.
 #kolla_ironic_enabled_deploy_interfaces:
+kolla_ironic_enabled_deploy_interfaces:
+  - direct
+  - fake
+  - iscsi
 
 # Default deploy interface to be used for nodes that do not have
 # deploy_interface field set.
 #kolla_ironic_default_deploy_interface:
+kolla_ironic_default_deploy_interface: fake
 
 # Specify the list of inspect interfaces to load during service initialization.
 #kolla_ironic_enabled_inspect_interfaces:
+kolla_ironic_enabled_inspect_interfaces:
+  - inspector
+  - no-inspect
 
 # Default inspect interface to be used for nodes that do not have
 # inspect_interface field set.
 #kolla_ironic_default_inspect_interface:
+kolla_ironic_default_inspect_interface: inspector
 
 # Specify the list of management interfaces to load during service
 # initialization.
 #kolla_ironic_enabled_management_interfaces:
+kolla_ironic_enabled_management_interfaces:
+  - fake
+  - ipmitool
 
 # Default management interface to be used for nodes that do not have
 # management_interface field set.
 #kolla_ironic_default_management_interface:
+kolla_ironic_default_management_interface: fake
 
 # Specify the list of network interfaces to load during service initialization.
 #kolla_ironic_enabled_network_interfaces:
-
+kolla_ironic_enabled_network_interfaces:
+  - noop
+  - flat
+  - neutron
 # Default network interface to be used for nodes that do not have
 # network_interface field set.
 #kolla_ironic_default_network_interface:
+kolla_ironic_default_network_interface: neutron
 
 # Specify the list of power interfaces to load during service initialization.
 #kolla_ironic_enabled_power_interfaces:
+kolla_ironic_enabled_power_interfaces:
+  - fake
+  - ipmitool
 
 # Default power interface to be used for nodes that do not have power_interface
 # field set.
 #kolla_ironic_default_power_interface:
+kolla_ironic_default_power_interface: fake
 
 # Specify the list of raid interfaces to load during service initialization.
 #kolla_ironic_enabled_raid_interfaces:
+kolla_ironic_enabled_raid_interfaces:
+  - agent
+  - no-raid
 
 # Default raid interface to be used for nodes that do not have
 # raid_interface field set.
 #kolla_ironic_default_raid_interface:
+kolla_ironic_default_raid_interface: no-raid
 
 # Specify the list of storage interfaces to load during
 # service initialization.
 #kolla_ironic_enabled_storage_interfaces:
+kolla_ironic_enabled_storage_interfaces:
+  - cinder
+  - noop
 
 # Default storage interface to be used for nodes that do not
 # have storage_interface field set.
 #kolla_ironic_default_storage_interface:
+kolla_ironic_default_storage_interface: noop
 
 # Specify the list of vendor interfaces to load during service initialization.
 #kolla_ironic_enabled_vendor_interfaces:
+kolla_ironic_enabled_vendor_interfaces:
+  - no-vendor
 
 # Default vendor interface to be used for nodes that do not have
 # vendor_interface field set.
 #kolla_ironic_default_vendor_interface:
+kolla_ironic_default_vendor_interface: no-vendor
 
 # Default boot option to use when no boot option is requested in node's
 # driver_info.
