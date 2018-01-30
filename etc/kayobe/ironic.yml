@@ -2,6 +2,8 @@
 ###############################################################################
 # Ironic configuration.
 
+kolla_ironic_drivers:
+  - fake
 kolla_ironic_enabled_hardware_types:
   - fake-hardware
 kolla_ironic_enabled_boot_interfaces:
