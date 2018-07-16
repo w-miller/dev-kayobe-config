@@ -1,0 +1,16 @@
+---
+# The hosts used by Zuul may or may not have Virtualization Technology (VT)
+# enabled. Don't fail if it's disabled.
+libvirt_host_require_vt: false
+
+# NOTE(mgoddard): We're using a cirros image, which doesn't require the
+# resolv.conf work around used for CentOS.
+overcloud_host_image_workaround_resolv_enabled: false
+
+# The default value for the seed bootstrap user is $USER, which will be zuul
+# during CI jobs. Set the centos user explicitly.
+seed_bootstrap_user: centos
+
+# Reduce the memory footprint of the seed VM.
+# The VM provided by Zuul has 8GB RAM use half for the seed VM.
+seed_vm_memory_mb: "{{ 4 * 1024 }}"
