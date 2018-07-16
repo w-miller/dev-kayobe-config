@@ -57,7 +57,7 @@
 # Docker namespace to use for Kolla images.
 #kolla_docker_namespace:
 # Kolla namespace doesn't have a queens tag yet.
-kolla_docker_namespace: stackhpc
+#kolla_docker_namespace: stackhpc
 
 # Kolla OpenStack release version. This should be a Docker image tag.
 #kolla_openstack_release:
